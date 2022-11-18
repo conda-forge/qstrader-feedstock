@@ -1,5 +1,5 @@
 {% set name = "qstrader" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cdbb81bd6a816025eebd104449aefddac608fe218cad11755df22d5099212a3b
+  sha256: 49835f62ec1ba91a2ce9cbf99f83470cd6d23385e5dd04931f01b1b131fdb20e
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'QuantStart.com - QSTrader backtesting simulation engine.'
+  summary: QuantStart.com - QSTrader backtesting simulation engine.
   description: |
     QSTrader is a free Python-based open-source modular schedule-driven backtesting framework for long-short equities and ETF based systematic trading strategies.
 
