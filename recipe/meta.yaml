@@ -1,5 +1,5 @@
 {% set name = "qstrader" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cdbb81bd6a816025eebd104449aefddac608fe218cad11755df22d5099212a3b
+  sha256: c798909f3a43b9c09a37e34564fc5887d3d5c30d657395399d7f9ac1cdc77cc1
 
 build:
   noarch: python
