@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - click ==7.1.2
-    - matplotlib ==3.0.3
+    - matplotlib-base ==3.0.3
     - numpy ==1.18.4
     - pandas ==1.1.5
     - seaborn ==0.10.1
